@@ -1,5 +1,10 @@
 const db = require("../db/db")
 
+
+const index = (req,res)=>{
+    res.send("Hola mundo")
+}
+
 const getBooks = (req, res) => {
     res.send(db)
 }
@@ -55,4 +60,4 @@ const putBook = (req, res) => {
 
 }
 
-module.exports = { getBooks, getBooksById, postBook, putBook, deleteBook }
+module.exports = { getBooks, getBooksById, postBook, putBook, deleteBook , index}

@@ -1,6 +1,8 @@
 const routes = require("express").Router()
-const {getBooks,getBooksById,postBook,putBook,deleteBook } = require("../controllers/book.controllers")
+const {getBooks,getBooksById,postBook,putBook,deleteBook,index } = require("../controllers/book.controllers")
 
+
+routes.get('/', index)
 
 routes.get('/books/',getBooks )
 
